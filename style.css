@@ -44,6 +44,10 @@ nav ul a {
     margin: 10px 20px;
 }
 
+.single-icon {
+    visibility: hidden;
+}
+
 nav ul a:hover {
     color: white;
     cursor: pointer;
@@ -206,12 +210,16 @@ nav ul a:hover {
 }
 
 @media screen and (max-width: 765px) {
-    nav ul {
+    .menu {
         display: none;
     }
 
     nav span {
         display: flex;
         justify-content: center;
+    }
+
+    .single-icon {
+        visibility: visible;
     }
 }
