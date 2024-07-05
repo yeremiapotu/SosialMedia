@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Tiny5", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+    /* background-color: #ffe5e5; */
+}
+
+/* navbar */
+
+nav {
+    position: fixed;
+    width: 100%;
+    color: tomato;
+    padding: 20px 50px;
+    background-color: #ffcece;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav span {
+    font-size: 30px;
+}
+
+nav ul {
+    font-size: 20px;
+    display: flex;
+    margin-right: 100px;
+    list-style: none;
+}
+
+nav ul a {
+    color: tomato;
+    text-decoration: none;
+    align-items: center;
+    padding: 2px 5px;
+    margin: 10px 20px;
+}
+
+nav ul a:hover {
+    color: white;
+    cursor: pointer;
+    /* background-color: tomato;
+    border-radius: 10px; */
+    transition: 0.3s;
+}
+
+/* home */
+
+.container-satu {
+    padding: 180px 50px 50px 50px;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-satu {
+    width: 50%;
+    height: auto;
+    color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-dua {
+    width: 45%;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-dua img {
+    width: 350px;
+    height: auto;
+    border-radius: 25% 0%;
+    /* border: 5px solid #ffcece; */
+}
+
+/* sosmed */
+
+.container-dua {
+    padding: 50px;
+    background-color: #ffcece;
+}
+
+.sosmed {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-satu,
+.card-dua,
+.card-tiga,
+.card-empat,
+.card-lima,
+.card-enam,
+.card-tujuh,
+.card-delapan {
+    margin: 20px;
+    background-color: silver;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.icons {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: tomato;
+    font-size: 50px;
+}
+
+/* .card-satu h1,
+.card-dua h1,
+.card-tiga h1,
+.card-empat h1 {
+    font-size: 30px;
+} */
+
+.card-satu a,
+.card-dua a,
+.card-tiga a,
+.card-empat a,
+.card-lima a,
+.card-enam a,
+.card-tujuh a,
+.card-delapan a {
+    margin-top: 10px;
+    padding: 5px 50px;
+    background-color: #868686;
+    font-size: 25px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px black;
+    color: white;
+    text-decoration: none;
+}
+
+.card-satu a:hover,
+.card-dua a:hover,
+.card-tiga a:hover,
+.card-empat a:hover,
+.card-lima a:hover,
+.card-enam a:hover,
+.card-tujuh a:hover,
+.card-delapan a:hover {
+    transition: .2s;
+    background-color: white;
+    box-shadow: none;
+    color: tomato;
+}
+
+/* responsive */
+
+@media screen and (max-width: 916px) {
+    .content-dua img {
+        width: 300px;
+    }
+
+    .home {
+        display: flex;
+        flex-decoration: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-satu {
+        width: 100%;
+        height: auto;
+        color: tomato;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .content-dua {
+        width: 100%;
+        padding: 50px 20px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    nav ul {
+        display: none;
+    }
+
+    nav span {
+        display: flex;
+        justify-content: center;
+    }
+}
